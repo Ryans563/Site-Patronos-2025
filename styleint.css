@@ -1,0 +1,121 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Playfair Display', serif;
+    background: url('Justiça.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: #5A3E2B; /* Marrom */
+    padding: 20px;
+    text-align: right;
+    font-size: 24px;
+}
+
+/* Container das biografias */
+.biografia-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 50px;
+    gap: 80px; /* Espaçamento entre os Patronos */
+}
+
+/* Cada patrono */
+.patrono {
+    width: 70%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container imagen */
+.imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Imagem lado lado */
+.imagens img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover nas imagens */
+.imagens img:hover {
+    transform: scale(1.05);
+}
+
+/* Bloco flutuante da biografia */
+.bio-texto {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%; /* Maior largura para a biografia */
+    font-size: 1.2rem;
+    margin-top: 30px; /* Mais espaço entre as imagens e o texto */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Garantindo que o bloco flutuante faça todos os Patronos */
+.patrono:nth-child(3) .bio-texto,
+.patrono:nth-child(4) .bio-texto {
+    background: rgba(0, 0, 0, 0.8); /* fundo escuro do bloc*/
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 1024px) {
+    .patrono {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .biografia-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .patrono {
+        width: 100%;
+    }
+
+    .imagens img {
+        width: 48%;
+    }
+
+    .bio-texto {
+        width: 95%;
+        font-size: 1rem;
+    }
+}

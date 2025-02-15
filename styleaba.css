@@ -1,0 +1,79 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página com imagem de fundo */
+body {
+    font-family: 'Playfair Display', serif;
+    background: url('nm.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    background-size: 100% 100%;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: #5A3E2B; /* Marrom */
+    padding: 20px;
+    text-align: right;
+    font-size: 24px;
+}
+
+/* Container principal */
+.container {
+    text-align: right;
+    padding: 50px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6); /* Caixa escura translúcida */
+    border-radius: 10px;
+}
+
+/* Texto */
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Botão estilizado */
+#continueBtn {
+    background-color: #FFC107;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#continueBtn:hover {
+    background-color: #E0A800;
+    transform: scale(1.05);
+}
+
+/* Seção de biografias */
+#biografias {
+    display: none;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    text-align: center;
+    color: black;
+    width: 80%;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+/* Ocultar por padrão */
+.hidden {
+    display: none;
+}
