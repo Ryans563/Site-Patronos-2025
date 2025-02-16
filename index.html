@@ -18,7 +18,27 @@
             <p>Bem-vindo ao universo dos Patronos! Conheça as histórias que moldaram o futuro.</p>
             
             <!-- Formulário escondido para enviar via POST -->
-           <a href="html/index.html" id="continueBtn" class="botao-continuar">Conheça-os melhor!</a>
+         <!-- Link que funciona como um botão -->
+<a href="html/index.html" id="continueBtn" class="botao-continuar">Conheça-os melhor!</a>
+
+<!-- Estilos CSS para o botão -->
+<style>
+    .botao-continuar {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Cor do fundo */
+        color: white; /* Cor do texto */
+        text-align: center;
+        text-decoration: none; /* Remove o sublinhado padrão do link */
+        border-radius: 5px; /* Bordas arredondadas */
+        font-size: 16px; /* Tamanho da fonte */
+        transition: background-color 0.3s ease;
+    }
+
+    .botao-continuar:hover {
+        background-color: #45a049; /* Cor do fundo quando passar o mouse */
+    }
+</style>
 
             <!-- Botão que ativa o envio do formulário -->
             <button id="continueBtn" type="button" onclick="submitForm()">Conheça-os melhor !</button>
