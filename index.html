@@ -25,27 +25,29 @@
     #continueBtn {
         display: inline-block;
         background-color: #FFC107; /* Cor de fundo */
+        color: #ffffff; /* Cor do texto no estado normal */
         border: none;
         padding: 12px 24px; /* Espaçamento interno */
         font-size: 1.2rem; /* Tamanho da fonte */
-        cursor: pointer; /* Muda o cursor para "pointer" ao passar o mouse */
-        border-radius: 10px; /* Bordas arredondadas */
-        text-decoration: none; /* Remove o sublinhado padrão */
-        transition: background 0.3s ease, transform 0.2s ease; /* Transições para a cor de fundo e efeito de transformação */
-        text-align: center; /* Centraliza o texto */
-        width: auto; /* Largura automática */
+        cursor: pointer; 
+        border-radius: 10px;
+        text-decoration: none; 
+        transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Transições para a cor de fundo, efeito de transformação e cor do texto */
+        text-align: center; 
+        width: auto;
     }
 
     #continueBtn:hover {
-        background-color: #E0A800; /* Cor de fundo quando o mouse passa por cima */
-        transform: scale(1.05); /* Efeito de aumento no botão */
+        background-color: #E0A800; /* Cor de fundo quando o mouse PASSA EM ESTADO HOVER */
+        transform: scale(1.05); /* Efeito de aumento btn */
+        color: #8B4513; /* Cor do texto estado hover */
     }
 
-    /* Tornando o botão responsivo */
+    /* botão responsivo */
     @media (max-width: 600px) {
         #continueBtn {
-            font-size: 1rem; /* Tamanho da fonte menor em telas menores */
-            padding: 10px 20px; /* Reduz o padding para telas menores */
+            font-size: 1rem; /* Tamanho da fonte responsivo */
+            padding: 10px 20px; /* padding para telas menores */
         }
     }
 </style>
