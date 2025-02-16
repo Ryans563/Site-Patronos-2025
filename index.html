@@ -23,6 +23,7 @@
 <!-- Estilos CSS para o botão -->
 <style>
     #continueBtn {
+        display: inline-block;
         background-color: #FFC107; /* Cor de fundo */
         border: none;
         padding: 12px 24px; /* Espaçamento interno */
@@ -31,13 +32,24 @@
         border-radius: 10px; /* Bordas arredondadas */
         text-decoration: none; /* Remove o sublinhado padrão */
         transition: background 0.3s ease, transform 0.2s ease; /* Transições para a cor de fundo e efeito de transformação */
+        text-align: center; /* Centraliza o texto */
+        width: auto; /* Largura automática */
     }
 
     #continueBtn:hover {
         background-color: #E0A800; /* Cor de fundo quando o mouse passa por cima */
         transform: scale(1.05); /* Efeito de aumento no botão */
     }
+
+    /* Tornando o botão responsivo */
+    @media (max-width: 600px) {
+        #continueBtn {
+            font-size: 1rem; /* Tamanho da fonte menor em telas menores */
+            padding: 10px 20px; /* Reduz o padding para telas menores */
+        }
+    }
 </style>
+
 
         </div>
     </section>
