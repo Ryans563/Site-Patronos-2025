@@ -17,31 +17,28 @@
         <div class="content">
             <p>Bem-vindo ao universo dos Patronos! Conheça as histórias que moldaram o futuro.</p>
             
-            <!-- Formulário escondido para enviar via POST -->
-         <!-- Link que funciona como um botão -->
-<a href="html/index.html" id="continueBtn" class="botao-continuar">Conheça-os melhor!</a>
+<!-- Link que funciona como um botão estilizado -->
+<a href="html/index.html" id="continueBtn">Conheça-os melhor!</a>
 
 <!-- Estilos CSS para o botão -->
 <style>
-    .botao-continuar {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #4CAF50; /* Cor do fundo */
-        color: white; /* Cor do texto */
-        text-align: center;
-        text-decoration: none; /* Remove o sublinhado padrão do link */
-        border-radius: 5px; /* Bordas arredondadas */
-        font-size: 16px; /* Tamanho da fonte */
-        transition: background-color 0.3s ease;
+    #continueBtn {
+        background-color: #FFC107; /* Cor de fundo */
+        border: none;
+        padding: 12px 24px; /* Espaçamento interno */
+        font-size: 1.2rem; /* Tamanho da fonte */
+        cursor: pointer; /* Muda o cursor para "pointer" ao passar o mouse */
+        border-radius: 10px; /* Bordas arredondadas */
+        text-decoration: none; /* Remove o sublinhado padrão */
+        transition: background 0.3s ease, transform 0.2s ease; /* Transições para a cor de fundo e efeito de transformação */
     }
 
-    .botao-continuar:hover {
-        background-color: #45a049; /* Cor do fundo quando passar o mouse */
+    #continueBtn:hover {
+        background-color: #E0A800; /* Cor de fundo quando o mouse passa por cima */
+        transform: scale(1.05); /* Efeito de aumento no botão */
     }
 </style>
 
-            <!-- Botão que ativa o envio do formulário -->
-            <button id="continueBtn" type="button" onclick="submitForm()">Conheça-os melhor !</button>
         </div>
     </section>
 
